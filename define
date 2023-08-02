@@ -1,0 +1,23 @@
+#define THROTL_UNSET      -2
+#define THROTL_NO_LIMIT   -1
+ 
+bool throttle_is_quota_valid(int64_t value)
+{
+    // 复杂的判断条件
+    // 请你在三秒内说出 value 如何取值是合法的？
+    if (value < 0 && value != THROTL_UNSET && value != THROTL_NO_LIMIT)
+    {
+        return false;
+    }
+    return true;
+}
+ 
+bool throttle_is_quota_valid(int64_t value)
+{
+    // 这是修改后的代码，value 取值合法有三种情况，一目了然
+    return value >= 0 || value == THROTL_UNSET || value == THROTL_NO_LIMIT;
+}
+
+————————————————
+版权声明：本文为CSDN博主「帅气滴点C」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。
+原文链接：https://blog.csdn.net/baidu_31437863/article/details/127311528
