@@ -1,0 +1,5 @@
+System.out.println("jndiCtxFactory="+s.getJndiCtxFactory()); 
+      System.out.println("connFactory="+s.getConnFactory()); 
+      System.out.println("providerURL="+s.getProviderURL()); 
+      System.out.println("topicName="+s.getTopicName()); 
+ 
