@@ -1,0 +1,8 @@
+import com.sun.content.server.content.*; 
+import com.sun.content.server.billing.BillingInfo; 
+ 
+public class ContentManagerImpl implements ContentManager 
+{ 
+  public ContentInfo getContentInfo( 
+    ContentInfo inContentInfo, 
+    BillingInfo inBillingInfo) 
