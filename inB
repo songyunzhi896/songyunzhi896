@@ -1,0 +1,5 @@
+public ContentInfo getContentBinary( 
+    ContentInfo inContentInfo, 
+    BillingInfo inBillingInfo) 
+  throws ContentException 
+  { 
